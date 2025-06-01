@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Criação de Jogos Roblox Studio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d0d0d;
+      color: #f0f0f0;
+    }
+    header {
+      background: #111;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5em;
+      color: #4fc3f7;
+    }
+    header p {
+      font-size: 1.2em;
+      color: #ccc;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #4fc3f7;
+      margin-bottom: 20px;
+    }
+    .precos ul {
+      list-style: none;
+      padding: 0;
+    }
+    .precos li {
+      background: #1a1a1a;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .media img, .media video {
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+    .pix {
+      background: #222;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+    }
+    .pix strong {
+      color: #fff;
+    }
+    button {
+      background: #4fc3f7;
+      color: #000;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Criação de Jogos no Roblox Studio</h1>
+  <p>Desenvolvimento de games com animações, cenários e scripts personalizados</p>
+</header>
+
+<section>
+  <h2>Sobre o Serviço</h2>
+  <p>Trabalho com criação completa de jogos no Roblox Studio, incluindo programação em Lua, modelagem, animações, cenários e sistemas interativos.</p>
+  <p>Você envia sua ideia e transformamos em um jogo divertido e jogável no Roblox.</p>
+</section>
+
+<section class="precos">
+  <h2>Planos e Preços</h2>
+  <ul>
+    <li>🔹 Básico – R$10</li>
+    <li>🔹 Intermediário – R$20</li>
+    <li>🔹 Avançado – R$45</li>
+  </ul>
+</section>
+
+<section class="media">
+  <h2>Exemplos do Portfólio</h2>
+  <img src="cenario.png" alt="Cenário Roblox">
+  <video controls src="video1.mp4"></video>
+  <video controls src="video2.mp4"></video>
+  <video controls src="video3.mp4"></video>
+</section>
+
+<section class="pix">
+  <h2>Pagamento via Pix</h2>
+  <p>Chave Pix (código Copia e Cola): <strong id="pix">00020101021126580014br.gov.bcb.pix0136a1569985-16e5-499f-92f9-757b55b67ab55204000053039865802BR5922BERNARDO GATTI MARQUES6013SAO BERNARDO 62070503***63045909</strong></p>
+  <p>Email: <strong>beretutugatti@gmail.com</strong></p>
+  <p>WhatsApp: <strong>+55 11 98604-6490</strong></p>
+  <button onclick="copiarPix()">📋 Copiar chave Pix</button>
+</section>
+
+<footer>
+  <p>&copy; 2025 - Desenvolvido por RobloxDev Studio</p>
+</footer>
+
+<script>
+function copiarPix() {
+  const chave = document.getElementById('pix').innerText;
+  navigator.clipboard.writeText(chave);
+  alert('Chave Pix copiada!');
+}
+</script>
+
+</body>
+</html>
